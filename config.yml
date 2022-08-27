@@ -13,7 +13,7 @@ bot:
 
 urls:
     # PyDis site vars
-    site:        &DOMAIN       "web:8000"
+    site:        &DOMAIN       "localhost:8000"
     site_api:    &API    !JOIN [*DOMAIN, "/api"]
     site_api_schema:           "http://"
     site_paste:  &PASTE  !JOIN ["paste.", "pythondiscord.com"]
@@ -32,10 +32,10 @@ dev_guild:
     id: &DEV_GUILD_ID   1006959767023013948
 
     categories:
-        logs:           &DEV_LOGS               �
-        help_available: &DEV_HELP_AVAILABLE     �
-        help_occupied:  &DEV_HELP_OCCUPIED      �
-        help_dormant:   &DEV_HELP_DORMANT       �
+        logs:           &DEV_LOGS               1006960746950832188
+        help_available: &DEV_HELP_AVAILABLE     1012991226334674984
+        help_occupied:  &DEV_HELP_OCCUPIED      1012995526809104446
+        help_dormant:   &DEV_HELP_DORMANT       1012995526809104446
         voice:          &DEV_VOICE              �
 
     channels:
