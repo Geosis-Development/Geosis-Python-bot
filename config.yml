@@ -1,6 +1,6 @@
 bot:
     prefix:      "!"
-
+    token:          !ENV "BOT_TOKEN"
     redis:
         host:  "redis"
         password: null
@@ -13,7 +13,7 @@ bot:
 
 urls:
     # PyDis site vars
-    site:        &DOMAIN       "localhost:8000"
+    site:        &DOMAIN       "web:8000"
     site_api:    &API    !JOIN [*DOMAIN, "/api"]
     site_api_schema:           "http://"
     site_paste:  &PASTE  !JOIN ["paste.", "pythondiscord.com"]
@@ -250,7 +250,7 @@ style:
         defcon_unshutdown:  "<:defconenabled:�>"
         defcon_update:      "<:defconsettingsupdated:�>"
 
-        failmail: "<:failmail:�>"
+        failmail: "<:failmail:633660039931887616>"
 
         #incident_actioned:      "<:incident_actioned:�>"
         incident_investigating: "<:incident_investigating:�>"
@@ -344,4 +344,3 @@ python_news:
     webhook: *PYNEWS_WEBHOOK
 
 ##### <<  Add any additional sections you need to override from config-default.yml  >> #####
-            
